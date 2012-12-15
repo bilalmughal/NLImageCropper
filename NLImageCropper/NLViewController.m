@@ -39,7 +39,7 @@
     [self.view addSubview:_imageCropper];
     [self.view setAutoresizesSubviews:YES];
     [self.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
-    [_imageCropper setImage:[UIImage imageNamed:@"sample2.jpg"]];
+    [_imageCropper setImage:[UIImage imageNamed:@"sample.png"]];
     [_imageCropper setCropRegionRect:CGRectMake(10, 50, 450, 680)];
 //        [_imageCropper setImage:[_imageCropper getCroppedImage]];
 #ifndef ARC

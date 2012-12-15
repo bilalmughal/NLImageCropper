@@ -116,7 +116,7 @@
     [super touchesBegan:touches withEvent:event];
 
     CGPoint locationPoint = [[touches anyObject] locationInView:_imageView];
-    if(locationPoint.x < 0 || locationPoint.y < 0)
+    if(locationPoint.x < 0 || locationPoint.y < 0 || locationPoint.x > _imageView.bounds.size.width || locationPoint.y > _imageView.bounds.size.height)
     {
         _movePoint = NoPoint;
         return;
@@ -163,7 +163,7 @@
     CGPoint locationPoint = [[touches anyObject] locationInView:_imageView];
 
     NSLog(@"Location Point: (%f,%f)", locationPoint.x, locationPoint.y);
-    if(locationPoint.x < 0 || locationPoint.y < 0)
+    if(locationPoint.x < 0 || locationPoint.y < 0 || locationPoint.x > _imageView.bounds.size.width || locationPoint.y > _imageView.bounds.size.height)
     {
         _movePoint = NoPoint;
         return;

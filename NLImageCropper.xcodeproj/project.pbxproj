@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C74FB8D167CF15500A75091 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FB8C167CF15500A75091 /* sample.png */; };
+		9CE663561672813E00AC5650 /* NLCropViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE663551672813E00AC5650 /* NLCropViewLayer.m */; };
 		9CE82CC3166CF29B00DD0165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CC2166CF29B00DD0165 /* UIKit.framework */; };
 		9CE82CC5166CF29B00DD0165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CC4166CF29B00DD0165 /* Foundation.framework */; };
 		9CE82CC7166CF29B00DD0165 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CC6166CF29B00DD0165 /* CoreGraphics.framework */; };
@@ -19,9 +21,14 @@
 		9CE82CDC166CF29B00DD0165 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE82CDA166CF29B00DD0165 /* MainStoryboard_iPhone.storyboard */; };
 		9CE82CDF166CF29B00DD0165 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE82CDD166CF29B00DD0165 /* MainStoryboard_iPad.storyboard */; };
 		9CE82CE2166CF29B00DD0165 /* NLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE82CE1166CF29B00DD0165 /* NLViewController.m */; };
+		9CE82CEA166CF2D700DD0165 /* NLImageCropperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE82CE9166CF2D700DD0165 /* NLImageCropperView.m */; };
+		9CE82CEE166D0A1C00DD0165 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CED166D0A1C00DD0165 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C74FB8C167CF15500A75091 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		9CE663541672813E00AC5650 /* NLCropViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLCropViewLayer.h; sourceTree = "<group>"; };
+		9CE663551672813E00AC5650 /* NLCropViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLCropViewLayer.m; sourceTree = "<group>"; };
 		9CE82CBE166CF29B00DD0165 /* NLImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE82CC2166CF29B00DD0165 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9CE82CC4166CF29B00DD0165 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +46,9 @@
 		9CE82CDE166CF29B00DD0165 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9CE82CE0166CF29B00DD0165 /* NLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NLViewController.h; sourceTree = "<group>"; };
 		9CE82CE1166CF29B00DD0165 /* NLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NLViewController.m; sourceTree = "<group>"; };
+		9CE82CE8166CF2D700DD0165 /* NLImageCropperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLImageCropperView.h; sourceTree = "<group>"; };
+		9CE82CE9166CF2D700DD0165 /* NLImageCropperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLImageCropperView.m; sourceTree = "<group>"; };
+		9CE82CED166D0A1C00DD0165 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE82CEE166D0A1C00DD0165 /* QuartzCore.framework in Frameworks */,
 				9CE82CC3166CF29B00DD0165 /* UIKit.framework in Frameworks */,
 				9CE82CC5166CF29B00DD0165 /* Foundation.framework in Frameworks */,
 				9CE82CC7166CF29B00DD0165 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +69,7 @@
 		9CE82CB3166CF29B00DD0165 = {
 			isa = PBXGroup;
 			children = (
+				9CE82CED166D0A1C00DD0165 /* QuartzCore.framework */,
 				9CE82CC8166CF29B00DD0165 /* NLImageCropper */,
 				9CE82CC1166CF29B00DD0165 /* Frameworks */,
 				9CE82CBF166CF29B00DD0165 /* Products */,
@@ -85,6 +97,7 @@
 		9CE82CC8166CF29B00DD0165 /* NLImageCropper */ = {
 			isa = PBXGroup;
 			children = (
+				9C74FB8C167CF15500A75091 /* sample.png */,
 				9CE82CD1166CF29B00DD0165 /* NLAppDelegate.h */,
 				9CE82CD2166CF29B00DD0165 /* NLAppDelegate.m */,
 				9CE82CDA166CF29B00DD0165 /* MainStoryboard_iPhone.storyboard */,
@@ -92,6 +105,10 @@
 				9CE82CE0166CF29B00DD0165 /* NLViewController.h */,
 				9CE82CE1166CF29B00DD0165 /* NLViewController.m */,
 				9CE82CC9166CF29B00DD0165 /* Supporting Files */,
+				9CE82CE8166CF2D700DD0165 /* NLImageCropperView.h */,
+				9CE82CE9166CF2D700DD0165 /* NLImageCropperView.m */,
+				9CE663541672813E00AC5650 /* NLCropViewLayer.h */,
+				9CE663551672813E00AC5650 /* NLCropViewLayer.m */,
 			);
 			path = NLImageCropper;
 			sourceTree = "<group>";
@@ -168,6 +185,7 @@
 				9CE82CD9166CF29B00DD0165 /* Default-568h@2x.png in Resources */,
 				9CE82CDC166CF29B00DD0165 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9CE82CDF166CF29B00DD0165 /* MainStoryboard_iPad.storyboard in Resources */,
+				9C74FB8D167CF15500A75091 /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +199,8 @@
 				9CE82CCF166CF29B00DD0165 /* main.m in Sources */,
 				9CE82CD3166CF29B00DD0165 /* NLAppDelegate.m in Sources */,
 				9CE82CE2166CF29B00DD0165 /* NLViewController.m in Sources */,
+				9CE82CEA166CF2D700DD0165 /* NLImageCropperView.m in Sources */,
+				9CE663561672813E00AC5650 /* NLCropViewLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +324,7 @@
 				9CE82CE7166CF29B00DD0165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

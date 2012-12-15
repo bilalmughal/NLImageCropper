@@ -1,5 +1,5 @@
 //
-//  NLAppDelegate.h
+//  NLCropViewLayer.h
 //  NLImageCropper
 //
 // Copyright © 2012, Mirza Bilal (bilal@mirzabilal.com)
@@ -26,8 +26,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NLAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+@interface NLCropViewLayer : UIView
+{
+    CGRect _cropRect;
+}
+- (void)setCropRegionRect:(CGRect)cropRect;
 @end

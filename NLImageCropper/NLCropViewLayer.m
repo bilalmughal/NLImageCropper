@@ -1,5 +1,5 @@
 //
-//  NLAppDelegate.h
+//  NLCropViewLayer.m
 //  NLImageCropper
 //
 // Copyright © 2012, Mirza Bilal (bilal@mirzabilal.com)
@@ -24,10 +24,58 @@
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "NLCropViewLayer.h"
 
-@interface NLAppDelegate : UIResponder <UIApplicationDelegate>
+@implementation NLCropViewLayer
 
-@property (strong, nonatomic) UIWindow *window;
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+        _cropRect = CGRectMake(0, 0, 0, 0);
+    }
+    return self;
+}
+
+- (void)setCropRegionRect:(CGRect)cropRect
+{
+    _cropRect = cropRect;
+}
+
+-(void) drawRect:(CGRect)rect2
+{
+    [super drawRect:rect2];
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGRect rect = _cropRect;
+    
+    CGContextSetRGBFillColor(context,   0.0, 0.0, 0.0, 0.7);
+    CGContextSetRGBStrokeColor(context, 0.6, 0.6, 0.6, 1.0);
+    
+    
+    CGFloat lengths[2];
+    lengths[0] = 0.0;
+    lengths[1] = 3.0 * 2;
+    CGContextSetLineCap(context, kCGLineCapRound);
+    CGContextSetLineWidth(context, 3.0);
+    CGContextSetLineDash(context, 0.0f, lengths, 2);
+    
+    
+    float w = self.bounds.size.width;
+    float h = self.bounds.size.height;
+    
+    CGRect clips2[] =
+	{
+        CGRectMake(0, 0, w, rect.origin.y),
+        CGRectMake(0, rect.origin.y,rect.origin.x, rect.size.height),
+        CGRectMake(0, rect.origin.y + rect.size.height, w, h-(rect.origin.y+rect.size.height)),
+        CGRectMake(rect.origin.x + rect.size.width, rect.origin.y, w-(rect.origin.x + rect.size.width), rect.size.height),
+	};
+    CGContextClipToRects(context, clips2, sizeof(clips2) / sizeof(clips2[0]));
+    
+    CGContextFillRect(context, self.bounds);
+    CGContextStrokeRect(context, rect);
+    UIGraphicsEndImageContext();
+}
 
 @end

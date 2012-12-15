@@ -1,4 +1,5 @@
-![](https://github.com/bilalmughal/NLImageCropper.git/NLImageCropper/screenshot.png?raw=true)
+![](https://github.com/bilalmughal/NLImageCropper/blob/master/NLImageCropper/sceenshot.png?raw=true)
+
 
 - This is a simple UIView based image cropper. To add this to your project do the following.
   1. Create an object NLImageCropperView.

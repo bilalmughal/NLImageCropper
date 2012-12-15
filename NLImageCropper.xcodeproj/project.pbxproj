@@ -11,7 +11,7 @@
 		9C74FB91167D085100A75091 /* corner.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FB90167D085000A75091 /* corner.png */; };
 		9C74FBBE167D1D4300A75091 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FBBD167D1D4300A75091 /* sample.jpg */; };
 		9C74FBC0167D1FA900A75091 /* sceenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FBBF167D1FA900A75091 /* sceenshot.png */; };
-		9C74FBC2167D1FFC00A75091 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FBC1167D1FFC00A75091 /* README */; };
+		9C74FBC4167D22DC00A75091 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FBC3167D22DC00A75091 /* README.md */; };
 		9CE663561672813E00AC5650 /* NLCropViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE663551672813E00AC5650 /* NLCropViewLayer.m */; };
 		9CE82CC3166CF29B00DD0165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CC2166CF29B00DD0165 /* UIKit.framework */; };
 		9CE82CC5166CF29B00DD0165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CC4166CF29B00DD0165 /* Foundation.framework */; };
@@ -34,7 +34,7 @@
 		9C74FB90167D085000A75091 /* corner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = corner.png; sourceTree = "<group>"; };
 		9C74FBBD167D1D4300A75091 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample.jpg; sourceTree = "<group>"; };
 		9C74FBBF167D1FA900A75091 /* sceenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sceenshot.png; sourceTree = "<group>"; };
-		9C74FBC1167D1FFC00A75091 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		9C74FBC3167D22DC00A75091 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		9CE663541672813E00AC5650 /* NLCropViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLCropViewLayer.h; sourceTree = "<group>"; };
 		9CE663551672813E00AC5650 /* NLCropViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLCropViewLayer.m; sourceTree = "<group>"; };
 		9CE82CBE166CF29B00DD0165 /* NLImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +77,7 @@
 		9CE82CB3166CF29B00DD0165 = {
 			isa = PBXGroup;
 			children = (
+				9C74FBC3167D22DC00A75091 /* README.md */,
 				9CE82CED166D0A1C00DD0165 /* QuartzCore.framework */,
 				9CE82CC8166CF29B00DD0165 /* NLImageCropper */,
 				9CE82CC1166CF29B00DD0165 /* Frameworks */,
@@ -120,7 +121,6 @@
 				9CE82CE9166CF2D700DD0165 /* NLImageCropperView.m */,
 				9CE663541672813E00AC5650 /* NLCropViewLayer.h */,
 				9CE663551672813E00AC5650 /* NLCropViewLayer.m */,
-				9C74FBC1167D1FFC00A75091 /* README */,
 			);
 			path = NLImageCropper;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 				9C74FB91167D085100A75091 /* corner.png in Resources */,
 				9C74FBBE167D1D4300A75091 /* sample.jpg in Resources */,
 				9C74FBC0167D1FA900A75091 /* sceenshot.png in Resources */,
-				9C74FBC2167D1FFC00A75091 /* README in Resources */,
+				9C74FBC4167D22DC00A75091 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

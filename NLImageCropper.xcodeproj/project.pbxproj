@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C74FB8D167CF15500A75091 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FB8C167CF15500A75091 /* sample.png */; };
+		9C74FB8F167CFF2300A75091 /* LICENCE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C74FB8E167CFF2300A75091 /* LICENCE.txt */; };
 		9CE663561672813E00AC5650 /* NLCropViewLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE663551672813E00AC5650 /* NLCropViewLayer.m */; };
 		9CE82CC3166CF29B00DD0165 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CC2166CF29B00DD0165 /* UIKit.framework */; };
 		9CE82CC5166CF29B00DD0165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE82CC4166CF29B00DD0165 /* Foundation.framework */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		9C74FB8C167CF15500A75091 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
+		9C74FB8E167CFF2300A75091 /* LICENCE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE.txt; sourceTree = "<group>"; };
 		9CE663541672813E00AC5650 /* NLCropViewLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLCropViewLayer.h; sourceTree = "<group>"; };
 		9CE663551672813E00AC5650 /* NLCropViewLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLCropViewLayer.m; sourceTree = "<group>"; };
 		9CE82CBE166CF29B00DD0165 /* NLImageCropper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NLImageCropper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 		9CE82CC8166CF29B00DD0165 /* NLImageCropper */ = {
 			isa = PBXGroup;
 			children = (
+				9C74FB8E167CFF2300A75091 /* LICENCE.txt */,
 				9C74FB8C167CF15500A75091 /* sample.png */,
 				9CE82CD1166CF29B00DD0165 /* NLAppDelegate.h */,
 				9CE82CD2166CF29B00DD0165 /* NLAppDelegate.m */,
@@ -186,6 +189,7 @@
 				9CE82CDC166CF29B00DD0165 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9CE82CDF166CF29B00DD0165 /* MainStoryboard_iPad.storyboard in Resources */,
 				9C74FB8D167CF15500A75091 /* sample.png in Resources */,
+				9C74FB8F167CFF2300A75091 /* LICENCE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

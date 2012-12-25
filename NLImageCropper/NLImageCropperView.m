@@ -28,6 +28,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #define MIN_IMG_SIZE 30
+#define EDGE_THRESHOLD 10
 
 @implementation NLImageCropperView
 
@@ -123,26 +124,26 @@
     }
     _lastMovePoint = locationPoint;
     
-    if(((locationPoint.x - 5) <= _translatedCropRect.origin.x) &&
-       ((locationPoint.x + 5) >= _translatedCropRect.origin.x))
+    if(((locationPoint.x - EDGE_THRESHOLD) <= _translatedCropRect.origin.x) &&
+       ((locationPoint.x + EDGE_THRESHOLD) >= _translatedCropRect.origin.x))
     {
-        if(((locationPoint.y - 5) <= _translatedCropRect.origin.y) &&
-           ((locationPoint.y + 5) >= _translatedCropRect.origin.y))
+        if(((locationPoint.y - EDGE_THRESHOLD) <= _translatedCropRect.origin.y) &&
+           ((locationPoint.y + EDGE_THRESHOLD) >= _translatedCropRect.origin.y))
             _movePoint = LeftTop;
-        else if ((locationPoint.y - 5) <= (_translatedCropRect.origin.y + _translatedCropRect.size.height) &&
-                 (locationPoint.y + 5) >= (_translatedCropRect.origin.y + _translatedCropRect.size.height))
+        else if ((locationPoint.y - EDGE_THRESHOLD) <= (_translatedCropRect.origin.y + _translatedCropRect.size.height) &&
+                 (locationPoint.y + EDGE_THRESHOLD) >= (_translatedCropRect.origin.y + _translatedCropRect.size.height))
             _movePoint = LeftBottom;
         else
             _movePoint = NoPoint;
     }
-    else if(((locationPoint.x - 5) <= (_translatedCropRect.origin.x + _translatedCropRect.size.width)) &&
-            ((locationPoint.x + 5) >= (_translatedCropRect.origin.x + _translatedCropRect.size.width)))
+    else if(((locationPoint.x - EDGE_THRESHOLD) <= (_translatedCropRect.origin.x + _translatedCropRect.size.width)) &&
+            ((locationPoint.x + EDGE_THRESHOLD) >= (_translatedCropRect.origin.x + _translatedCropRect.size.width)))
     {
-        if(((locationPoint.y - 5) <= _translatedCropRect.origin.y) &&
-           ((locationPoint.y + 5) >= _translatedCropRect.origin.y))
+        if(((locationPoint.y - EDGE_THRESHOLD) <= _translatedCropRect.origin.y) &&
+           ((locationPoint.y + EDGE_THRESHOLD) >= _translatedCropRect.origin.y))
             _movePoint = RightTop;
-        else if ((locationPoint.y - 5) <= (_translatedCropRect.origin.y + _translatedCropRect.size.height) &&
-                 (locationPoint.y + 5) >= (_translatedCropRect.origin.y + _translatedCropRect.size.height))
+        else if ((locationPoint.y - EDGE_THRESHOLD) <= (_translatedCropRect.origin.y + _translatedCropRect.size.height) &&
+                 (locationPoint.y + EDGE_THRESHOLD) >= (_translatedCropRect.origin.y + _translatedCropRect.size.height))
             _movePoint = RightBottom;
         else
             _movePoint = NoPoint;
